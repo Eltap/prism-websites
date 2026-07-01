@@ -6,17 +6,19 @@
   <title>Prism Websites | Websites for Local Businesses</title>
   <meta name="description" content="Prism Websites designs and builds simple, fast, mobile-friendly websites for small businesses and local shops." />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg" />
 </head>
 <body>
   <header>
     <div class="nav-wrap">
-      <a href="#home" class="logo">Prism <span>Websites</span></a>
+      <a href="#home" class="logo"><img src="images/logo-mark.svg" alt="" class="logo-icon" width="28" height="28" />Prism <span>Websites</span></a>
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
         </ul>
@@ -26,7 +28,8 @@
 
   <section id="home" class="hero">
     <div class="container">
-      <h1>Websites that make your business look as good as it actually is.</h1>
+      <div class="eyebrow"><span class="dot"></span> Websites for small businesses</div>
+      <h1>Websites that make your business look <span class="gradient-text">as good as it actually is</span>.</h1>
       <p>I design and build simple, fast, mobile-friendly websites for small businesses and local shops &mdash; no bloated templates, no confusing dashboards.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn">Get a Free Quote</a>
@@ -65,11 +68,13 @@
     <div class="container">
       <div class="section-header">
         <h2>Recent Work</h2>
-        <p>A couple of real, live examples of the two most common site types I build.</p>
+        <p>A few real, live examples of the two most common site types I build.</p>
       </div>
       <div class="work-grid">
         <div class="work-card">
-          <div class="work-thumb coffee">Maple &amp; Grind</div>
+          <div class="work-thumb-frame">
+            <iframe src="https://eltap.github.io/maple-and-grind/" title="Maple & Grind live preview" loading="lazy" tabindex="-1"></iframe>
+          </div>
           <div class="work-body">
             <div class="work-tag">Multi-Page Business Site</div>
             <h3>Maple &amp; Grind Coffee Shop</h3>
@@ -78,7 +83,9 @@
           </div>
         </div>
         <div class="work-card">
-          <div class="work-thumb landscape">Evergreen Grounds</div>
+          <div class="work-thumb-frame">
+            <iframe src="https://evergreen.prismwebsites.com/" title="Evergreen Grounds live preview" loading="lazy" tabindex="-1"></iframe>
+          </div>
           <div class="work-body">
             <div class="work-tag">Lead-Gen Landing Page</div>
             <h3>Evergreen Grounds Landscaping</h3>
@@ -86,11 +93,80 @@
             <a href="https://evergreen.prismwebsites.com/" class="link" target="_blank" rel="noopener">View Live Site &rarr;</a>
           </div>
         </div>
+        <div class="work-card">
+          <div class="work-thumb-frame">
+            <iframe src="https://eltap.github.io/bark-ave-grooming/" title="Bark Ave Mobile Grooming live preview" loading="lazy" tabindex="-1"></iframe>
+          </div>
+          <div class="work-body">
+            <div class="work-tag">Lead-Gen Landing Page</div>
+            <h3>Bark Ave Mobile Grooming</h3>
+            <p>A single-page site for a mobile dog grooming business &mdash; package pricing, a gallery, and a booking request form.</p>
+            <a href="https://eltap.github.io/bark-ave-grooming/" class="link" target="_blank" rel="noopener">View Live Site &rarr;</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb-frame">
+            <iframe src="https://eltap.github.io/turnkey-auto-tire/" title="Turnkey Auto & Tire live preview" loading="lazy" tabindex="-1"></iframe>
+          </div>
+          <div class="work-body">
+            <div class="work-tag">Multi-Page Business Site</div>
+            <h3>Turnkey Auto &amp; Tire</h3>
+            <p>A four-page site for a family-owned auto shop, focused on trust and easy contact rather than online sales.</p>
+            <a href="https://eltap.github.io/turnkey-auto-tire/" class="link" target="_blank" rel="noopener">View Live Site &rarr;</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section-alt">
+  <section id="pricing" class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pricing</h2>
+        <p>Flat project pricing, so you know the cost upfront &mdash; no hourly surprises. Final quote depends on your specific pages and features.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card price-card">
+          <div class="icon">&#127919;</div>
+          <h3>Landing Page</h3>
+          <div class="price">Starting at $400</div>
+          <p>A single, focused page built to turn visitors into calls or quote requests.</p>
+          <ul class="check-list">
+            <li>One page: hero, services, testimonials, contact form</li>
+            <li>Mobile-friendly design</li>
+            <li>1 round of revisions</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get a Quote</a>
+        </div>
+        <div class="card price-card">
+          <div class="icon">&#127760;</div>
+          <h3>Business Website</h3>
+          <div class="price">Starting at $700</div>
+          <p>A full multi-page site to represent your business online.</p>
+          <ul class="check-list">
+            <li>Up to 5 pages (home, about, services, contact, etc.)</li>
+            <li>Mobile-friendly design</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+        <div class="card price-card">
+          <div class="icon">&#128295;</div>
+          <h3>Custom &amp; Add-Ons</h3>
+          <div class="price">Let's talk</div>
+          <p>For anything beyond the basics.</p>
+          <ul class="check-list">
+            <li>Extra pages, copywriting, or stock photo sourcing</li>
+            <li>Rush delivery</li>
+            <li>Ongoing updates &amp; support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
     <div class="container">
       <div class="about-grid">
         <div>
@@ -103,7 +179,9 @@
             <li>You own your site and content, no lock-in</li>
           </ul>
         </div>
-        <div class="work-thumb landscape" style="height: 280px; background: repeating-linear-gradient(135deg, #5b5bf0, #5b5bf0 30px, #7a7af5 30px, #7a7af5 60px);">[ your photo or logo here ]</div>
+        <div class="brand-panel">
+          <img src="images/logo-mark.svg" alt="Prism Websites" class="brand-mark" />
+        </div>
       </div>
     </div>
   </section>

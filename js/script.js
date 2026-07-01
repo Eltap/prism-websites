@@ -12,6 +12,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const revealEls = document.querySelectorAll(
+    ".card, .work-card, .price-card, .section-header, .brand-panel, .about-grid > div"
+  );
+
+  if (revealEls.length) {
+    revealEls.forEach((el) => el.classList.add("reveal"));
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      revealEls.forEach((el) => revealObserver.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add("is-visible"));
+    }
+
+    // Safety net: never leave content permanently invisible if the observer
+    // fails to fire for any reason.
+    window.setTimeout(() => {
+      revealEls.forEach((el) => el.classList.add("is-visible"));
+    }, 2000);
+  }
+
   const form = document.querySelector("#contact-form");
   const status = document.querySelector(".form-status");
 
