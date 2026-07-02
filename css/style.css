@@ -256,6 +256,12 @@ section {
   gap: 26px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
 .card {
   background: white;
   padding: 32px 26px;
@@ -490,8 +496,15 @@ footer .fine-print {
 }
 
 /* Responsive */
+@media (max-width: 960px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 760px) {
   .grid-3,
+  .grid-4,
   .work-grid,
   .about-grid {
     grid-template-columns: 1fr;
